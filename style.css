@@ -437,7 +437,8 @@ a {
   height: 450px;
   background-color: white;
   z-index: 3;
-display: none; }
+ display: none; 
+}
   .submit__line {
     width: 100px;
     height: 2px;
