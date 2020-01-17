@@ -169,20 +169,22 @@
            
 
             <script>
-                    function initMap() {
-                    var coordinates = {lat: 40.690480, lng:  -73.884130};
-                    var grayStyles = [{
-                        featureType: "all",
-                        stylers: [
-                            { saturation: -90 },
-                            { lightness: 50 }]},];
-                    var map = new google.maps.Map(document.getElementById('map'), {zoom: 12, center: coordinates,styles: grayStyles,});
-                    var marker = new google.maps.Marker({position: coordinates, map: map, icon: 'pin.png',});}
-                </script>
-
-       
-        <script  async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGM-r9Z8nHyps34EXyq5iUc648rBOR_Bk&callback=initMap" type="text/javascript"></script>
-
+                function initMap() {
+                var coordinates = {lat: 49.560727, lng: 25.616000};
+                var grayStyles = [{
+                    featureType: "all",
+                    stylers: [
+                        { saturation: -90 },
+                        { lightness: 50 }]},];
+                var map = new google.maps.Map(document.getElementById('map'), {zoom: 17, center: coordinates,});
+                var marker = new google.maps.Marker({
+                      position: {lat: 49.560727, lng: 25.616000},
+                      map: map,
+                      title: 'RAZOR',
+                  });
+                }
+            </script>
+            <script  async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhYg7JehYdlRWBjPP6jLrMLYmLflWn9aM&callback=initMap" type="text/javascript"></script>
     
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
